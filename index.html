@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أهلاً بالعالم</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #ffffff;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        color: #111111;
+        padding: 24px;
+      }
+
+      main {
+        max-width: 720px;
+        width: 100%;
+        display: grid;
+        gap: 24px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(32px, 5vw, 48px);
+        letter-spacing: 0.5px;
+      }
+
+      .subtitle {
+        margin: 0 auto;
+        font-size: 18px;
+        max-width: 520px;
+        color: #444;
+        line-height: 1.6;
+      }
+
+      .preview {
+        border: 1px solid #e1e1e1;
+        border-radius: 16px;
+        background: linear-gradient(180deg, #fff, #f9f9f9);
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      }
+
+      .preview__label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        margin-bottom: 12px;
+        background: #f2f2f2;
+        color: #222;
+        font-size: 14px;
+        border-radius: 999px;
+        font-weight: 600;
+      }
+
+      .preview__screen {
+        border: 1px solid #d8d8d8;
+        border-radius: 12px;
+        background: #ffffff;
+        min-height: 200px;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+      }
+
+      .preview__text {
+        font-size: 28px;
+        color: #000000;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>أهلاً بالعالم</h1>
+      <p class="subtitle">
+        صفحة واجهة أولية بخلفية بيضاء ونص أسود بسيط. تمت إضافة معاينة توضح شكل
+        الشاشة الرئيسية مباشرة.
+      </p>
+
+      <section class="preview" aria-label="معاينة الواجهة">
+        <div class="preview__label" aria-hidden="true">معاينة</div>
+        <div class="preview__screen">
+          <p class="preview__text">أهلاً بالعالم</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
